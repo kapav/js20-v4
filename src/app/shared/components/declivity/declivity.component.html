@@ -1,0 +1,38 @@
+<p>declivity works!</p>
+
+<!--Привязка значения, привязка события-->
+<label for="x-input">X</label>
+<input type="text" id="x-input"
+  [value]="xValue"
+  (input)="xValue = $event.target.value">
+
+<label for="y-input">Y</label>
+<input type="text" id="y-input"
+  [ngModel]="yValue"
+  (ngModelChange)="yValue = $event">
+
+<label for="z-input">Z</label>
+<input type="text" id="z-input"
+  [(ngModel)]="zValue"><br/>
+
+<!--Template Reference Variable (переменная ссылки шаблона)-->
+<!--чтобы избавиться от двухсторонней привязки-->
+<label for="w-input">W</label>
+<input type="text" id="w-input" #wInput
+  [value]="wValue"
+  (input)="wValue = +wInput.value"><br/>
+
+<button (click)="calculate()">Вычислить</button>
+<button (click)="reset()">Сброс</button>
+
+<div>Результат: {{ result }}</div>
+
+<!--Двухсторонняя привязка контролов для примера-->
+<input type="checkbox" [(ngModel)]="settings.accent">Обратить внимание<br/>
+<input type="checkbox" [(ngModel)]="settings.error">Ошибка<br/>
+<input type="checkbox" [(ngModel)]="settings.highlighted">Выделение<br/>
+
+<!--атрибутивная директива ngClass-->
+<div [ngClass]="settings">Здравствуй, Вселенная! №1</div><br/>
+
+<!--Привязка ко классу class binding-->

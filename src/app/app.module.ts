@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import {EvidenceService} from './shared/services/evidence.service'
@@ -14,8 +15,10 @@ import { GableComponent } from './shared/components/gable/gable.component';
 import { SlopeComponent } from './shared/components/slope/slope.component';
 import { SlabComponent } from './shared/components/slab/slab.component';
 import { WallComponent } from './shared/components/wall/wall.component';
+import { DeclivityComponent } from './shared/components/declivity/declivity.component';
+import { InclineComponent } from './shared/components/incline/incline.component'
 import { BiasComponent } from './shared/components/bias/bias.component';
-import { CliffComponent } from './shared/components/cliff/cliff.component'
+import { CliffComponent } from './shared/components/cliff/cliff.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,15 @@ import { CliffComponent } from './shared/components/cliff/cliff.component'
     WallComponent,
     BiasComponent,
     CliffComponent,
+    DeclivityComponent,
+    InclineComponent,
     BracketPipe,
     UnlessDirective,
     HighlightDirective
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [EvidenceService],

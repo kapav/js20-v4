@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BiasComponent implements OnInit {
 
+  color: string
+
+  colorFromBias = 'fuchsia'
+
   constructor() { }
 
   ngOnInit() {
