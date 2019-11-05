@@ -19,6 +19,7 @@ import { DeclivityComponent } from './shared/components/declivity/declivity.comp
 import { InclineComponent } from './shared/components/incline/incline.component'
 import { PitchComponent } from './shared/components/pitch/pitch.component';
 import { SlantComponent } from './shared/components/slant/slant.component';
+import { TiltComponent } from './shared/components/tilt/tilt.component';
 import { BiasComponent } from './shared/components/bias/bias.component';
 import { CliffComponent } from './shared/components/cliff/cliff.component';
 
@@ -38,6 +39,7 @@ import { CliffComponent } from './shared/components/cliff/cliff.component';
     InclineComponent,
     PitchComponent,
     SlantComponent,
+    TiltComponent,
     BracketPipe,
     UnlessDirective,
     HighlightDirective
