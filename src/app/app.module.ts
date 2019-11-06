@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import {EvidenceService} from './shared/services/evidence.service'
@@ -20,6 +20,9 @@ import { InclineComponent } from './shared/components/incline/incline.component'
 import { PitchComponent } from './shared/components/pitch/pitch.component';
 import { SlantComponent } from './shared/components/slant/slant.component';
 import { TiltComponent } from './shared/components/tilt/tilt.component';
+import { StaircaseComponent } from './shared/components/staircase/staircase.component';
+import { StairwayComponent } from './shared/components/stairway/stairway.component';
+import { StairwellComponent } from './shared/components/stairwell/stairwell.component';
 import { BiasComponent } from './shared/components/bias/bias.component';
 import { CliffComponent } from './shared/components/cliff/cliff.component';
 
@@ -40,6 +43,9 @@ import { CliffComponent } from './shared/components/cliff/cliff.component';
     PitchComponent,
     SlantComponent,
     TiltComponent,
+    StaircaseComponent,
+    StairwayComponent,
+    StairwellComponent,
     BracketPipe,
     UnlessDirective,
     HighlightDirective
@@ -47,6 +53,7 @@ import { CliffComponent } from './shared/components/cliff/cliff.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [EvidenceService],
