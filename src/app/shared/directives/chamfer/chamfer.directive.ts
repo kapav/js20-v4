@@ -1,5 +1,6 @@
 import {Directive, Input, ElementRef, HostListener} from '@angular/core'
 
+// Атрибутная директива
 @Directive({ selector: '[appHighlight]' })
 export class HighlightDirective {
 

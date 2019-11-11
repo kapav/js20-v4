@@ -19,7 +19,7 @@ export class StoreyComponent implements OnInit {
   ngOnInit() {
   }
 
-  tumblerFromSlab(payload) {
+  tumblerFromStorey(payload) {
     this.payload = payload
     this.tumblerToHomePage.emit(this.payload)
   }

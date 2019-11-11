@@ -15,6 +15,8 @@ import { GableComponent } from './shared/components/gable/gable.component';
 import { SlopeComponent } from './shared/components/slope/slope.component';
 import { SlabComponent } from './shared/components/slab/slab.component';
 import { WallComponent } from './shared/components/wall/wall.component';
+import { BiasComponent } from './shared/components/bias/bias.component';
+import { CliffComponent } from './shared/components/cliff/cliff.component';
 import { DeclivityComponent } from './shared/components/declivity/declivity.component';
 import { InclineComponent } from './shared/components/incline/incline.component'
 import { PitchComponent } from './shared/components/pitch/pitch.component';
@@ -23,8 +25,6 @@ import { TiltComponent } from './shared/components/tilt/tilt.component';
 import { StaircaseComponent } from './shared/components/staircase/staircase.component';
 import { StairwayComponent } from './shared/components/stairway/stairway.component';
 import { StairwellComponent } from './shared/components/stairwell/stairwell.component';
-import { BiasComponent } from './shared/components/bias/bias.component';
-import { CliffComponent } from './shared/components/cliff/cliff.component';
 
 @NgModule({
   declarations: [
